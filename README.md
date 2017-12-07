@@ -1,2 +1,2 @@
 # Dagitik
-Dağıtık Projesi
+Dağıtık Projesi, Grup 5
