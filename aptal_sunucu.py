@@ -98,6 +98,7 @@ class ReaderThread(threading.Thread):
                     return msg
 
             if data[0:3] == "TIC":                                                    #kendi uuidsini eklesin
+                self.timestamp = time.ctime()                                         # zaman güncellenir.
                 self.logQueue.put(self.uuid + " said TIC")
                 msg = "TOC " + my_uuid
                 return msg
