@@ -102,7 +102,7 @@ class ReaderThread(threading.Thread):
                 msg = "TOC " + my_uuid
                 return msg
 
-            if data[0:3] == "LSA":
+            if data[0:3] == "LSQ":
                 response = ""
                 for i in self.fihrist.keys():
                     response += "\n" + i + " " + self.fihrist[i]
